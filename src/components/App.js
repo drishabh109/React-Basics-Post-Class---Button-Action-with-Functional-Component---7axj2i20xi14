@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./../styles/App.css";
 
 function App() {
-  const [set, setPara] = useState(true);
+  const [set, setPara] = useState();
   const para = () => {
-    setPara((set) => !set);
+    setPara((set) => (!set ? !set : set));
   };
 
   return (
